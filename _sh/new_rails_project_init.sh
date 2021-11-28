@@ -14,5 +14,7 @@ sed -i -e "s/host:.*/host: db/" config/database.yml
 ### 用 Rails 容器在 DB 中创建数据库
 docker-compose run --rm web rake db:create
 
-### 执行完以上所有命令后，才可以用以下的命令成功启动初始化的 Rails 项目
+### 执行完以上所有命令后，才可以用以下的命令成功启动初始的 Rails 项目
 docker-compose up
+
+### 启动完成后打开浏览器输入 http://localhost:63000/ 即可看到创建 Rails 的默认面面
