@@ -1,3 +1,17 @@
+## 初期目录结构
+.
+├── Dockerfile
+├── Gemfile
+├── Gemfile.lock
+├── _sh                             # 项目相关信息
+│   └── new_rails_project_init.sh   # 项目结构及初始化方法
+├── container_config
+│   └── mysql
+│       └── my.cnf
+├── docker-compose.yml
+└── entrypoint.sh
+
+
 ## 初始化 Rails 项目
 ### 项目第一次启动时, Rails 还未安装，目录下的 Gemfile 只有 rails, Gemfile.lock 为空白
 
